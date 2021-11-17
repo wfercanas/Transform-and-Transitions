@@ -1,0 +1,70 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: #113;
+}
+
+input {
+  display: block;
+  margin: 5rem auto 2rem;
+  width: 300px;
+  padding: 0.5rem 1rem;
+}
+
+input:focus {
+  outline: 1px solid tomato;
+}
+
+h1 {
+  text-align: center;
+}
+
+.trailer {
+  display: block;
+}
+
+p,
+ul,
+.trailer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: hotpink;
+}
+
+a:visited {
+  color: tomato;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p:not(.wonderland) {
+  color: lightsteelblue;
+}
+
+.container div:nth-child(1) {
+  color: lightseagreen;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  color: lightgreen;
+}
+
+li:hover {
+  scale: 1.5;
+  cursor: pointer;
+}
