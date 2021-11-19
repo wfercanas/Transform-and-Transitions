@@ -1,7 +1,0 @@
-div::before {
-  content: ':)';
-}
-
-div::after {
-  content: '-->';
-}
