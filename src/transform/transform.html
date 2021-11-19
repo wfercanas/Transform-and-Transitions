@@ -5,36 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../../assets/css.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="../../globals.css" />
     <link rel="stylesheet" href="./transform.css" />
     <title>Transform & Transitions</title>
   </head>
   <body>
-    <h1>Transform</h1>
-    <h2>Translate, scale, skew and rotate</h2>
-    <div class="shadow">
-      <div class="circle translate"></div>
-    </div>
-    <div class="shadow">
-      <div class="circle scale"></div>
-    </div>
-    <div class="shadow">
-      <div class="circle skew"></div>
-    </div>
-    <div class="shadow">
-      <div class="circle rotate"></div>
-    </div>
-    <h2>Transform-origin</h2>
-    <div class="shadow">
-      <div class="circle rotate origin"></div>
-    </div>
-    <h2>Transform-style</h2>
-    <div class="container">
-      <div class="item"></div>
-    </div>
-    <h2>Backface Visibility</h2>
-    <div class="card">
-      <div class="face front"></div>
-      <div class="face back"></div>
-    </div>
+    <main>
+      <h1>Transform</h1>
+      <h2>Translate, scale, skew and rotate</h2>
+      <section class="block">
+        <div class="shadow">
+          <div class="circle translate"></div>
+          <p class="subtitle">translate</p>
+        </div>
+        <div class="shadow">
+          <div class="circle scale"></div>
+          <p class="subtitle">scale</p>
+        </div>
+        <div class="shadow">
+          <div class="circle skew"></div>
+          <p class="subtitle">skew</p>
+        </div>
+        <div class="shadow">
+          <div class="circle rotate"></div>
+          <p class="subtitle">rotate</p>
+        </div>
+      </section>
+      <h2>Transform-origin</h2>
+      <section class="block">
+        <div class="shadow">
+          <div class="circle rotate origin"></div>
+        </div>
+        <p class="subtitle">
+          By default, the origin of a rotation is in the center of the element.
+          We can change it.
+        </p>
+      </section>
+      <h2>Transform-style</h2>
+      <section class="block">
+        <div class="container">
+          <div class="item"></div>
+        </div>
+        <p class="subtitle">
+          We can rotate an element preserving a 3D perspective.
+        </p>
+      </section>
+      <h2>Backface Visibility</h2>
+      <section class="block">
+        <div class="card">
+          <div class="face front"></div>
+          <div class="face back"></div>
+        </div>
+        <p class="subtitle">
+          We also can flip a card and show its backface content.
+        </p>
+      </section>
+    </main>
   </body>
 </html>
