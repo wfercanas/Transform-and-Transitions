@@ -1,0 +1,23 @@
+button {
+  background-color: bisque;
+  width: 100px;
+  height: 70px;
+}
+
+.better {
+  will-change: transform;
+  transition: transform 500ms;
+}
+
+.better:hover {
+  transform: translateY(5px);
+}
+
+.worst {
+  will-change: margin-top;
+  transition: margin-top 500ms;
+}
+
+.worst:hover {
+  margin-top: 5px;
+}
