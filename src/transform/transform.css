@@ -10,7 +10,8 @@ h2 {
 
 .block {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 5rem;
   justify-content: center;
 }
 
