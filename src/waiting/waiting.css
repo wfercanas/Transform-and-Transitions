@@ -1,38 +1,61 @@
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .nav {
+  position: relative;
   display: flex;
-  gap: 1rem;
 }
 
-.nav li ul {
+.nav > li {
+  background-color: black;
+  padding: 0.5rem 1rem;
+  transition: background-color 500ms;
+  cursor: pointer;
+}
+
+.nav > li:hover {
+  background-color: gray;
+  transition: background-color 500ms;
+}
+
+.nav li > ul {
   display: block;
-  opacity: 0;
   position: absolute;
-  transition: opacity 400ms;
+  left: 0;
+  top: 40px;
+  padding: 0;
+  visibility: hidden;
+  transition: visibility 400ms;
   transition-delay: 300ms;
+  background-color: black;
 }
 
 .nav li:hover > ul {
-  opacity: 1;
+  visibility: visible;
   transition: opacity 400ms;
-  transition-delay: 300ms;
+  transition-delay: 200ms;
+}
+
+.nav li > ul > li:hover {
+  background-color: gray;
 }
 
 .nav li ul li {
   position: relative;
-}
-
-.nav li ul li {
-  right: -50px;
+  padding: 0.5rem 1rem;
+  background-color: black;
 }
