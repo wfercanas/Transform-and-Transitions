@@ -1,7 +1,24 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: darkcyan;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 button {
   background-color: bisque;
   width: 100px;
   height: 70px;
+  cursor: pointer;
 }
 
 .better {
